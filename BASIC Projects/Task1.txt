@@ -1,0 +1,18 @@
+1. It starts by defining an empty list called ‘tasks’. This list will store dictionaries representing tasks, where each dictionary contains details about the task and whether it's completed or not.
+
+2. There are several functions defined:
+•	`Dis_task()`: Displays the current tasks in the to-do list.
+•	`Add_task(task_details)`: Adds a new task to the to-do list.
+•	`mark_complete(task_num)`: Marks a task as completed.
+•	`Remove_task(task_num)`: Removes a task from the to-do list.
+
+3. The main program runs in a loop (`while True`) where it presents a menu of options to the user:
+•	Option 1: Display the current tasks in the to-do list.
+•	Option 2: Add a new task to the to-do list.
+•	Option 3: Mark a task as completed.
+•	Option 4: Remove a task from the to-do list.
+•	Option 5: Quit the program.
+
+4. Based on the user's input, the program executes the corresponding function or quits if the user chooses option 5.
+
+The program allows users to manage their to-do list by adding, marking as completed, and removing tasks interactively through the command line interface.
