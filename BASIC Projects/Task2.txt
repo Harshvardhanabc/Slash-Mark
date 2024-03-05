@@ -1,0 +1,15 @@
+This code is a simple number guessing game implemented in Python. Here's a breakdown of how it works:
+
+1. The code imports two modules: ‘random’ for generating random numbers and ‘time’ for adding delays.
+2. A random number between 0 and 100 is generated using ‘random.randint(0,100)’.
+3. The ‘User’ function takes a name as input and provides instructions for the game.
+4. The `pick` function allows the user to guess the number. It runs in a loop for a maximum of 10 times.
+•	It prompts the user to input their guess.
+•	If the guess is out of range (less than 0 or greater than 100), it informs the user.
+•	If the guess is lower than the generated number, it informs the user that the guess is too low.
+•	If the guess is higher than the generated number, it informs the user that the guess is too high.
+•	If the guess is correct, it congratulates the user and informs them of the number of guesses it took.
+5. The main part of the code is a `while` loop that allows the user to play the game multiple times if they wish.
+•	It asks for the user's name, then calls the `User` function to give instructions.
+•	It then calls the `pick` function to start the game.
+•	After each game, it asks the user if they want to play again. If the response is affirmative, the loop continues; otherwise, it exits.
