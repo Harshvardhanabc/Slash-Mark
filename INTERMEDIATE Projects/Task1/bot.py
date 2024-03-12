@@ -1,5 +1,6 @@
 
-# Meet KKWBOT: your friend
+# Meet SMC: your friend
+# SMC stand for Slash Mark Chatbot
 
 import nltk
 import warnings
