@@ -1,1 +1,30 @@
+Automatic real-time Auto License Plate Recognizer
+
+Libraries Used:
+- OpenCV (cv2)
+
+File Paths:
+- Haar Cascade Classifier: "model/haarcascade_russian_plate_number.xml"
+
+Variables:
+- cap: Video capture object initialized with index 0 (default camera)
+- min_area: Minimum area of a detected plate (initialized to 500)
+- count: Counter for saving detected plates (initialized to 0)
+
+Main Loop:
+1. Capture frames from the camera.
+2. Convert frames to grayscale.
+3. Detect potential license plates using the pre-trained Haar Cascade classifier.
+4. For each detected plate:
+   - Calculate the area of the plate.
+   - If the area is greater than the minimum area:
+     - Draw a green rectangle around the detected plate.
+     - Display the text "Number Plate" above the rectangle.
+     - Extract the region of interest (ROI), i.e., the detected plate area.
+     - Display the ROI in a separate window titled "ROI".
+5. Display the original frame with detected plates outlined.
+6. If the 's' key is pressed:
+   - Save the ROI of the detected plate as an image file in the "plates" directory.
+   - Display a confirmation message on the original frame.
+7. Terminate the program if any key (other than 's') is pressed.
 
