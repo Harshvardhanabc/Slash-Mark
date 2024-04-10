@@ -24,13 +24,13 @@ def voice_change(v):
     engine.setProperty('voice',voices[x].id)
     speak("done sir")
 
-"""def open():
+def open():
     pyautogui.press("win")
     time.sleep(.5)
     pyautogui.write(query)
     time.sleep(.5)
     pyautogui.press("enter")
-"""
+
 def close():
     pyautogui.keyDown("alt")
     pyautogui.hotkey("f4")
@@ -60,7 +60,6 @@ def take_command():
         print("User said: "+query+"\n")
     except Exception as e:
         print(e)
-        speak("I didnt understand")
         return "None"
     return query
 
@@ -77,22 +76,22 @@ if __name__ == '__main__':
             speak(results)
         elif('hello' in query):
             speak("Hello Boss")
-        elif("open google" in query):
+        elif("google" in query):
             speak("Ok sir, opening google")
             wb.open_new_tab("www.google.com")
-        elif("open youtube" in query):
+        elif("youtube" in query):
             speak("Ok sir, opening youtube")
             wb.open_new_tab("www.youtube.com")
-        elif("open github" in query):
+        elif("github" in query):
             speak("Ok sir, opening github")
             wb.open_new_tab("www.github.com")
-        elif("open stackoverflow" in query):
+        elif("stackoverflow" in query):
             speak("Ok sir, opeing stackoverflow")
             wb.open_new_tab("https://stackoverflow.com/")
-        elif("open spotify" in query):
+        elif("spotify" in query):
             speak("Ok sir, opening spotify")
             wb.open_new_tab("https://open.spotify.com/")
-        elif("open whatsapp" in query):
+        elif("whatsapp" in query):
             speak("Ok sir, opening whatsapp")
             wb.open_new_tab("https://web.whatsapp.com/")
         elif("play music" in query):
@@ -111,10 +110,15 @@ if __name__ == '__main__':
                 voice_change(0)
         elif("close" in query):
             close()
-        elif("write" in query,"right" in query):
-            query = query.replace("write",'')
+        elif("type" in query):
+            query = query.replace("type",'')
             write()
         elif("click" in query):
             press("enter")
+        elif("open" in query):
+            query = query.replace("open",'')
+            open()
+        elif("protect" in query,"save" in query):
+            save()
         else:
             speak("I dont understand")
