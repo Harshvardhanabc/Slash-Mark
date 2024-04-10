@@ -120,5 +120,8 @@ if __name__ == '__main__':
             open()
         elif("protect" in query,"save" in query):
             save()
+        # close terminal
+        elif('sleep' in query):
+            exit(0)
         else:
             speak("I dont understand")
