@@ -1,0 +1,18 @@
+This Python code generates random passwords of specified lengths. Let's break down how it works:
+
+1. Import the 'random' module, which provides functions for generating random numbers.
+2. Define a function 'generate_password(passwords_length)' that takes the desired length of the password as input and returns a randomly generated password of that length.
+3. Define four lists:
+•	'Lower_Alpha': Contains lowercase letters.
+•	'Upper_Alpha': Contains uppercase letters.
+•	'Num': Contains numbers.
+•	'Symbol': Contains special characters.
+4. Concatenate all the lists into one 'all_characters' list.
+5. Use 'random.sample()' to randomly select characters from 'all_characters' of length 'passwords_length' and join them together to form a password.
+6. Prompt the user to input the number of passwords they want to generate ('Number_of_passwords').
+7. Create an empty list 'passwords_length' to store the lengths of passwords.
+8. Iterate through each password number and prompt the user to input the length of each password. If the length is greater than 3, add it to the 'passwords_length' list; otherwise, print a message indicating that the length is not valid.
+9. Create an empty list 'passwords' to store the generated passwords.
+10. Iterate through the lengths of passwords in 'passwords_length', generate a password of each length using the 'generate_password()' function, and append it to the 'passwords' list.
+11. Print each generated password along with its corresponding number.
+
