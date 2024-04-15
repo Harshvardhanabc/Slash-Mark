@@ -1,4 +1,3 @@
-
 # Meet SMC: your friend
 # SMC stand for Slash Mark Chatbot
 
