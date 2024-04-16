@@ -15,3 +15,4 @@ This is a simple chatbot named "SMC" (Slash Mark Chatbot). Let's break down its 
 7. Chat Functionality: It defines a chat function to interact with the user. It handles various scenarios like greetings, basic questions about SMC, and generating responses based on user input using the defined functions.
 
 Overall, this code creates a basic chatbot capable of responding to greetings, answering basic questions about itself (SMC), and engaging in a conversation based on the provided text data.
+
