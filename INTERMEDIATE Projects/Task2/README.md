@@ -51,3 +51,4 @@ This c is a Python script for a voice-controlled assistant called "Slash Mark As
 •	Exiting the program when the user says "sleep".
 
 This script essentially acts as a voice-controlled assistant that can perform various tasks based on user commands, such as searching the web, opening applications, and performing basic system operations.
+
