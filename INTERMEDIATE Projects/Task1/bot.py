@@ -154,4 +154,3 @@ def chat(user_response):
         flag = False
         print("SMC: Bye! take care..")
         return "Bye! take care.."
-
