@@ -27,4 +27,3 @@ Main Loop:
    - Save the ROI of the detected plate as an image file in the "plates" directory.
    - Display a confirmation message on the original frame.
 7. Terminate the program if any key (other than 's') is pressed.
-
